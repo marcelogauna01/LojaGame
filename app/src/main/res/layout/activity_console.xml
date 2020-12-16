@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:visibility="visible"
+    tools:context="com.euniritter.LojaDeJogos.Console"
+    tools:visibility="visible">
+
+
+    <ImageButton
+        android:id="@+id/nintendobutton"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="117dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="52dp"
+        android:onClick="irnintendo"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playbutton"
+        app:srcCompat="@drawable/nintendosemcor" />
+
+    <ImageButton
+        android:id="@+id/xboxbutton"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="118dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="64dp"
+        android:onClick="irxbox"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nintendobutton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/xboxsemcor" />
+
+    <ImageButton
+        android:id="@+id/playbutton"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="117dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="52dp"
+        android:onClick="irplay"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarconsole"
+        app:srcCompat="@drawable/playsemcor" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarconsole"
+        android:layout_width="415dp"
+        android:layout_height="65dp"
+        android:background="#444547"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:title="   Escolha o seu Console"
+        app:titleMargin="1dp"
+        app:titleMarginEnd="1dp"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteY="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

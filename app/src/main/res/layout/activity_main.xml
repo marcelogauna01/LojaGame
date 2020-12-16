@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:textAlignment="center"
+    android:visibility="visible"
+    tools:context="com.euniritter.LojaDeJogos.MainActivity">
+
+    <Button
+        android:id="@+id/proximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="irconsole"
+        android:text="Ir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senha"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <TextView
+        android:id="@+id/cadastro"
+        android:layout_width="250dp"
+        android:layout_height="47dp"
+        android:autoText="true"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="#FFFCFC"
+        android:text="Login"
+        android:textColor="#F1EEEE"
+        android:textColorHint="#F3EDED"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="248dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="104dp"
+        android:autoText="false"
+        android:contentDescription="email"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="false"
+        android:shadowColor="#F3EFEF"
+        android:textColor="#F8F8F8"
+        android:textColorHighlight="#FDF6F6"
+        android:textColorHint="#F4F3F3"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro"
+        tools:text="email"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="244dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#FBF6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.145"
+        tools:text="SENHA" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro"
+        app:layout_constraintVertical_bias="0.912" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.88" />
+</androidx.constraintlayout.widget.ConstraintLayout>

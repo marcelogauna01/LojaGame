@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.euniritter.LojaDeJogos">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="LojaDeJogos"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.euniritter.LojaDeJogos.Nintendo"/>
+        <activity android:name="com.euniritter.LojaDeJogos.Xbox" />
+        <activity android:name="com.euniritter.LojaDeJogos.Play" />
+        <activity android:name="com.euniritter.LojaDeJogos.Console" />
+        <activity android:name="com.euniritter.LojaDeJogos.MainActivity"/>
+        <activity android:name="com.euniritter.LojaDeJogos.splashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+
+</manifest>
